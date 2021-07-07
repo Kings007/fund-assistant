@@ -29,13 +29,13 @@ const http = (url) => {
 	}
  */
 export const fetchFundManagerList = ({
-	mfType = 2,
+	MFTYPE = 2,
 	sortColumn = 'MGOLD',
 	pageIndex = 1,
 	pageSize = 30
 }) => {
 	return http(
-		`https://fundmapi.eastmoney.com/fundmobapi/FundMApi/FundMangerBaseList.ashx?MFTYPE=${mfType}&SortColumn=${sortColumn}&Sort=desc&pageIndex=${pageIndex}&pageSize=${pageSize}&deviceid=fundmanager2016&version=4.3.0&product=EFund&plat=Iphone`
+		`https://fundmapi.eastmoney.com/fundmobapi/FundMApi/FundMangerBaseList.ashx?MFTYPE=${MFTYPE}&SortColumn=${sortColumn}&Sort=desc&pageIndex=${pageIndex}&pageSize=${pageSize}&deviceid=fundmanager2016&version=4.3.0&product=EFund&plat=Iphone`
 	);
 };
 

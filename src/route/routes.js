@@ -3,6 +3,11 @@ export const routes = [
 	// { path: '/', component: home },
 	{
 		path: '/about',
-		component: () => import(/*webpackChunkName: 'Home' */ '../pages/About/index.vue')
+		component: () => import(/*webpackChunkName: 'about' */ '../pages/About/index.vue')
+	},
+	{
+		path: '/fund-manager',
+		component: () =>
+			import(/*webpackChunkName: 'fundManager' */ '../pages/FundManager/index.vue')
 	}
 ];
